@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProjectSalesWeb.Data;
 using ProjectSalesWeb.Models;
-
+using ProjectSalesWeb.Services;
 namespace ProjectSalesWeb
 {
     public class Startup
@@ -41,6 +41,7 @@ namespace ProjectSalesWeb
                     options.UseMySql(Configuration.GetConnectionString("ProjectSalesWebContext"), builder =>
 builder.MigrationsAssembly("ProjectSalesWeb")));
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
