@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectSalesWeb.Data;
+using ProjectSalesWeb.Models;
 
 namespace ProjectSalesWeb.Migrations
 {
