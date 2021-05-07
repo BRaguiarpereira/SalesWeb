@@ -13,6 +13,7 @@ namespace ProjectSalesWeb.Models
 
         // Imprementando a associação de Seller com Departament
         public Department Department { get; set; }
+        public int DepartmentID { get; set; }
         // Imprementando a associação de Seller com SalesRecord
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
